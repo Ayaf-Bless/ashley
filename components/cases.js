@@ -7,7 +7,7 @@ const caseStudies = [
   {
     id: 1,
     subtitle: "Coiffure & maquillage",
-    title: "Pour tous vos besoins liés à la coiffure et au maquillage",
+    title: "Ayez vos besoins de coiffure satisfait",
     image: "hair",
   },
   {

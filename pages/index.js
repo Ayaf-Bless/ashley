@@ -4,6 +4,7 @@ import Header from "../components/header";
 import Banner from "../components/banner";
 import { useEffect } from "react";
 import Cases from "../components/cases";
+import IntroOverlay from "../components/introOverlay";
 
 export default function Home() {
   useEffect(() => {
@@ -12,6 +13,7 @@ export default function Home() {
   }, []);
   return (
     <div>
+      <IntroOverlay />
       <Header />
       <Banner />
       <Cases />
