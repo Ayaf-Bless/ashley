@@ -9,10 +9,10 @@ function Banner(props) {
         <div className={"row"}>
           <h2 className={"line"}>
             <div className={"line"}>
-              <span>Votre beautee</span>
+              <span>Votre beauté</span>
             </div>
             <div className={"line"}>
-              <span>Notre soucis</span>
+              <span>Notre souci</span>
             </div>
           </h2>
           <div className={"btn-row"}>
