@@ -9,18 +9,21 @@ const caseStudies = [
     subtitle: "Coiffure & maquillage",
     title: "Ayez vos besoins de coiffure satisfait",
     image: "hair",
+    slug: "coiffure-maquillage",
   },
   {
     id: 2,
     subtitle: "Marriage",
     title: "La location de robe de mariage et le maquillage",
     image: "wedding",
+    slug: "marriage",
   },
   {
     id: 3,
     subtitle: "Manicure",
     title: "Pour vos soins de main et son embellissement",
     image: "nails",
+    slug: "manicure",
   },
 ];
 
@@ -28,18 +31,10 @@ function Cases(props) {
   return (
     <section className={"cases"}>
       <div className={"container-fluid"}>
-        <div className={"cases-navigation"}>
-          <div className={"cases-arrow prev disabled"}>
-            <CasesPrev />
-          </div>
-          <div className={"cases-arrow next"}>
-            <CasesNext />
-          </div>
-        </div>
         <div className={"row"}>
           {caseStudies.map((caseItem) => (
             <div className={"case"} key={caseItem.id}>
-              <Link href={"/services"}>
+              <Link href={`/services/${caseItem.slug}`}>
                 <div>
                   <div className={"case-details"}>
                     <span>{caseItem.subtitle}</span>

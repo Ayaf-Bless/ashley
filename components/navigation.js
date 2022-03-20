@@ -10,10 +10,7 @@ const Navigation = () => {
             <div className="nav-label">Menu</div>
             <ul className="nav-links">
               <li>
-                <Link href={"/achievement"}>Nos Oeuvre</Link>
-              </li>
-              <li>
-                <Link href={"/about"}>À propos de nous</Link>
+                <Link href={"/show-case"}>Show case</Link>
               </li>
               <li>
                 <Link href={"/contact"}>Nous contacter</Link>
@@ -23,10 +20,6 @@ const Navigation = () => {
           <div className="nav-column">
             <div className="nav-label">Contact</div>
             <div className="nav-infos">
-              <ul className="nav-info">
-                <li className="nav-info-label">Email</li>
-                <li>aba@gmail.com</li>
-              </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">Phone</li>
                 <li>+243 891154985</li>

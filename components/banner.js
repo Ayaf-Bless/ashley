@@ -16,7 +16,7 @@ function Banner(props) {
             </div>
           </h2>
           <div className={"btn-row"}>
-            <Link href={"/about"}>
+            <Link href={"/show-case"}>
               <a>
                 en savoir plus <RightArrow />
               </a>
