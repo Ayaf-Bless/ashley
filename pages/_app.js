@@ -2,6 +2,7 @@ import "../styles/App.scss";
 import Header from "../components/header";
 import { useEffect } from "react";
 import gsap from "gsap";
+import Navigation from "../components/navigation";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
+      <Navigation />
       <Component {...pageProps} />
     </>
   );

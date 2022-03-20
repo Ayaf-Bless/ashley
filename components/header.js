@@ -8,12 +8,14 @@ function Header(props) {
         <div className={"row v-center space-between"}>
           <div className={"logo"}>
             <Link href={"/"}>
-              <a>Ashley.</a>
+              <a>Ashley</a>
             </Link>
           </div>
-          <div className={"nav"}>
-            <span />
-            <span />
+          <div className={"nav-toggle"}>
+            <div className={"hamburger-menu"}>
+              <span />
+              <span />
+            </div>
           </div>
         </div>
       </div>
