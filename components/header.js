@@ -3,7 +3,6 @@ import Link from "next/link";
 import { UpArrow } from "../utils/svg-component";
 import { useRouter } from "next/router";
 import { closeMenu, openMenu } from "../utils/nemuAnimation";
-import { withRouter } from "next/router";
 
 function Header({ dimensions }) {
   const router = useRouter();
@@ -57,4 +56,4 @@ function Header({ dimensions }) {
   );
 }
 
-export default withRouter(Header);
+export default Header;
