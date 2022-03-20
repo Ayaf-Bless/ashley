@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "../components/header";
 import Banner from "../components/banner";
 import { useEffect } from "react";
+import Cases from "../components/cases";
 
 export default function Home() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function Home() {
     <div>
       <Header />
       <Banner />
+      <Cases />
     </div>
   );
 }

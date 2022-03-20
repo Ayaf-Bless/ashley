@@ -30,10 +30,10 @@ function Banner(props) {
         <div className={"row"}>
           <h2 className={"line"}>
             <div className={"line"}>
-              <span>Faire en sorte que vous brilez</span>
+              <span>Votre beautee</span>
             </div>
             <div className={"line"}>
-              <span>C'est notre soucis</span>
+              <span>Notre soucis</span>
             </div>
           </h2>
           <div className={"btn-row"}>
