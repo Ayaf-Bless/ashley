@@ -41,7 +41,7 @@ export default function Home() {
     homeAnimation(completeAnimation);
   }, []);
   return (
-    <div>
+    <div className={"App"}>
       {!animationComplete ? <IntroOverlay /> : null}
       <Banner />
       <Cases />

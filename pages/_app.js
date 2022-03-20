@@ -17,8 +17,8 @@ function debounce(fn, ms) {
 
 function MyApp({ Component, pageProps }) {
   const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
+    height: typeof window !== "undefined" ? window.innerHeight : "",
+    width: typeof window !== "undefined" ? window.innerWidth : "",
   });
   useEffect(() => {
     // prevents flashing
@@ -36,11 +36,11 @@ function MyApp({ Component, pageProps }) {
     };
   });
   return (
-    <>
-      <Header />
+    <div>
+      <Header dimensions={dimensions} />
       <Navigation />
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }
 

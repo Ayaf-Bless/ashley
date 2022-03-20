@@ -10,7 +10,7 @@ const Navigation = () => {
             <div className="nav-label">Menu</div>
             <ul className="nav-links">
               <li>
-                <Link href={"/services"}>Nos services</Link>
+                <Link href={"/achievement"}>Nos Oeuvre</Link>
               </li>
               <li>
                 <Link href={"/about"}>À propos de nous</Link>
@@ -28,15 +28,15 @@ const Navigation = () => {
                 <li>aba@gmail.com</li>
               </ul>
               <ul className="nav-info">
+                <li className="nav-info-label">Phone</li>
+                <li>+243 891154985</li>
+              </ul>
+              <ul className="nav-info">
                 <li className="nav-info-label">Ou on est situé </li>
                 <li>Avanue luvungi 166</li>
                 <li>Rond-point huilerie</li>
                 <li>Réf: Restaurant ALI BABA</li>
                 <li>Commune: Kinshasa</li>
-              </ul>
-              <ul className="nav-info">
-                <li className="nav-info-label">Phone</li>
-                <li>+243 891154985</li>
               </ul>
             </div>
           </div>
