@@ -2,7 +2,7 @@ import React from "react";
 import { RightArrow as CasesNext } from "../utils/svg-component";
 import { ArrowLeft as CasesPrev } from "../utils/svg-component";
 import Image from "next/image";
-
+import Link from "next/link";
 const caseStudies = [
   {
     id: 1,
@@ -39,16 +39,20 @@ function Cases(props) {
         <div className={"row"}>
           {caseStudies.map((caseItem) => (
             <div className={"case"} key={caseItem.id}>
-              <div className={"case-details"}>
-                <span>{caseItem.subtitle}</span>
-                <h2>{caseItem.title}</h2>
-              </div>
-              <div className={"case-image"}>
-                <Image
-                  src={require(`../public/assets/ullistration/${caseItem.image}.jpg`)}
-                  alt={caseItem.title}
-                />
-              </div>
+              <Link href={"/services"}>
+                <div>
+                  <div className={"case-details"}>
+                    <span>{caseItem.subtitle}</span>
+                    <h2>{caseItem.title}</h2>
+                  </div>
+                  <div className={"case-image"}>
+                    <Image
+                      src={require(`../public/assets/ullistration/${caseItem.image}.jpg`)}
+                      alt={caseItem.title}
+                    />
+                  </div>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
