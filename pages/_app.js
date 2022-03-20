@@ -3,6 +3,7 @@ import Header from "../components/header";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import Navigation from "../components/navigation";
+import "../node_modules/locomotive-scroll/src/locomotive-scroll.scss";
 
 function debounce(fn, ms) {
   let timer;
