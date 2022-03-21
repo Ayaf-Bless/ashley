@@ -3,14 +3,14 @@ import { RightArrow as CasesNext } from "../utils/svg-component";
 import { ArrowLeft as CasesPrev } from "../utils/svg-component";
 import Image from "next/image";
 import Link from "next/link";
-import { caseStudies } from "../utils/itemData";
+import { serviceItem } from "../utils/itemData";
 
 function Cases(props) {
   return (
     <section className={"cases"}>
       <div className={"container-fluid"}>
         <div className={"row"}>
-          {caseStudies.map((caseItem) => (
+          {serviceItem.map((caseItem) => (
             <div className={"case"} key={caseItem.id}>
               <Link href={`/services/${caseItem.slug}`}>
                 <div>

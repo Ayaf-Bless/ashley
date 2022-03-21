@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { serviceItem } from "../../utils/itemData";
+import Image from "next/image";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const name = {
@@ -26,7 +27,7 @@ const letter = {
   },
 };
 
-function ServiceDetail({ imageDetails }) {
+function ServiceDetail({ imageDetails, service }) {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
@@ -38,8 +39,6 @@ function ServiceDetail({ imageDetails }) {
       document.querySelector("body").classList.remove("no-scroll");
     }
   }, [canScroll]);
-
-  const router = useRouter();
   return (
     <motion.div
       onAnimationComplete={() => setCanScroll(true)}
@@ -108,16 +107,19 @@ function ServiceDetail({ imageDetails }) {
                   whileHover="hover"
                   transition={transition}
                 >
-                  <motion.img
-                    src={require("../../public/assets/ullistration/wedding.jpg")}
-                    alt="an image"
+                  <motion.div
                     style={{ scale: scale }}
                     initial={{ scale: 1.0 }}
                     animate={{
                       transition: { delay: 0.2, ...transition },
                       y: -600,
                     }}
-                  />
+                  >
+                    <Image
+                      src={require(`../../public/assets/ullistration/${service.image}.jpg`)}
+                      alt="an image"
+                    />
+                  </motion.div>
                 </motion.div>
               </motion.div>
             </motion.div>
@@ -150,6 +152,24 @@ function ServiceDetail({ imageDetails }) {
       </div>
     </motion.div>
   );
+}
+
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  const service = serviceItem.find((service) => service.slug === slug);
+  return {
+    props: { service },
+  };
+}
+export async function getStaticPaths(context) {
+  const slugs = serviceItem.map((service) => service.slug);
+  const params = slugs.map((slug) => ({
+    params: { slug },
+  }));
+  return {
+    paths: params,
+    fallback: false,
+  };
 }
 
 export default ServiceDetail;

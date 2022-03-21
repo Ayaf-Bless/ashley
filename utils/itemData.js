@@ -1,4 +1,4 @@
-export const caseStudies = [
+export const serviceItem = [
   {
     id: 1,
     subtitle: "Coiffure & maquillage",
