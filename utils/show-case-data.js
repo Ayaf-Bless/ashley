@@ -1,12 +1,9 @@
 const photos = [
   "https://images.unsplash.com/photo-1614947657494-cd9d52238119?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGFpciUyMHN0eWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-  "https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhhaXIlMjBzdHlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-
-  "https://images.unsplash.com/photo-1523825036634-aab3cce05919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGhhaXIlMjBzdHlsZSUyMGJsYWNrJTIwd29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-
-  "https://images.unsplash.com/photo-1537253500005-0945025bafe6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2700&q=100",
-
-  "https://images.unsplash.com/photo-1504829857797-ddff29c27927?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=100",
+  "https://images.pexels.com/photos/7691411/pexels-photo-7691411.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "https://images.unsplash.com/photo-1522390108011-5f8667fd551d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsYWNrJTIwc2Fsb24lMjBoYWlyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "https://images.pexels.com/photos/3014937/pexels-photo-3014937.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "https://images.pexels.com/photos/6954108/pexels-photo-6954108.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 ];
 const imageData = [photos, photos, photos, photos];
 
