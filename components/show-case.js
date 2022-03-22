@@ -5,8 +5,6 @@ import { imageData } from "../utils/show-case-data";
 import LocomotiveScroll from "locomotive-scroll";
 
 import GalleryItem from "./gallery-item";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
 const ShowCase = () => {
   const ref = useRef(null);
 
@@ -38,8 +36,6 @@ const ShowCase = () => {
   }
   return (
     <>
-      {/*<div className="top" />*/}
-      {/*<Navbar />*/}
       <div className="main-container App">
         <div className="scroll-container" data-scroll-container ref={ref}>
           <div className="content">
@@ -58,8 +54,6 @@ const ShowCase = () => {
               </div>
               <div />
             </div>
-
-            {/*<Footer />*/}
           </div>
         </div>
       </div>

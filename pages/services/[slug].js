@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { serviceItem } from "../../utils/itemData";
 import Image from "next/image";
+import ScrollForMore from "../../components/scroolForMore";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const name = {
@@ -40,15 +41,15 @@ function ServiceDetail({ imageDetails, service }) {
     }
   }, [canScroll]);
   return (
-    <motion.div
+    <motion.main
       onAnimationComplete={() => setCanScroll(true)}
-      className="single"
+      className={"single App"}
       initial="initial"
       animate="animate"
       exit="exit"
     >
-      <div className="container fluid">
-        <div className="row center top-row">
+      <div className="container-show-case fluid">
+        <div className="row-show-case top-row">
           <div className="top">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -57,7 +58,7 @@ function ServiceDetail({ imageDetails, service }) {
                 y: 0,
                 transition: { delay: 1.2, ...transition },
               }}
-              className="details"
+              className={"details-show-case"}
             >
               <div className="location">
                 <span>28.538336</span>
@@ -67,32 +68,21 @@ function ServiceDetail({ imageDetails, service }) {
             </motion.div>
             <motion.div className="model">
               <motion.span className="first" variants={name}>
-                <motion.span variants={letter}>Y</motion.span>
-                <motion.span variants={letter}>a</motion.span>
-                <motion.span variants={letter}>s</motion.span>
-                <motion.span variants={letter}>m</motion.span>
-                <motion.span variants={letter}>e</motion.span>
-                <motion.span variants={letter}>e</motion.span>
-                <motion.span variants={letter}>n</motion.span>
-              </motion.span>
-              <motion.span className="last" variants={name}>
-                <motion.span variants={letter}>T</motion.span>
-                <motion.span variants={letter}>a</motion.span>
-                <motion.span variants={letter}>r</motion.span>
-                <motion.span variants={letter}>i</motion.span>
-                <motion.span variants={letter}>q</motion.span>
+                {[...service.subtitle].map((el, key) => (
+                  <motion.span key={key}>{el}</motion.span>
+                ))}
               </motion.span>
             </motion.div>
           </div>
         </div>
-        <div className="row bottom-row">
-          <div className="bottom">
+        <div className="row-show-case  bottom-row">
+          <div className="bottom-show-case">
             <motion.div className="image-container-single">
               <motion.div
                 initial={{
-                  y: "-50%",
-                  width: "50%",
-                  height: "50%",
+                  y: "50%",
+                  width: 524,
+                  height: 650,
                 }}
                 animate={{
                   y: 0,
@@ -124,7 +114,7 @@ function ServiceDetail({ imageDetails, service }) {
               </motion.div>
             </motion.div>
           </div>
-          {/*<ScrollForMore />*/}
+          <ScrollForMore />
         </div>
       </div>
       <div className="detailed-information">
@@ -150,7 +140,7 @@ function ServiceDetail({ imageDetails, service }) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.main>
   );
 }
 
