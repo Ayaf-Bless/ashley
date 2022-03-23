@@ -65,7 +65,7 @@ function ServiceDetail({ service }) {
                   <span>28.538336</span>
                   <span>-81.379234</span>
                 </div>
-                <div className="mua">MUA: @mylifeascrystall</div>
+                <div className="mua">Instagram: @ashley-salon</div>
               </motion.div>
               <motion.div className="model">
                 <motion.span className="first" variants={name}>
@@ -81,7 +81,7 @@ function ServiceDetail({ service }) {
               <motion.div className="image-container-single">
                 <motion.div
                   initial={{
-                    y: "-50%",
+                    y: "50%",
                     width: 524,
                     height: 650,
                   }}
@@ -121,9 +121,7 @@ function ServiceDetail({ service }) {
         <div className="detailed-information">
           <div className="container">
             <div className="row">
-              <h2 className="title">
-                The insiration behind the artwork & <br /> what it means.
-              </h2>
+              <h2 className="title">{service.title}</h2>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots in a piece of classical Latin literature from
