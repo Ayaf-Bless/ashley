@@ -37,8 +37,7 @@ const ScrollForMore = () => {
         </svg>
       </div>
       <div className="text">
-        Scroll <br />
-        for more
+        Scrollez <br /> en bas
       </div>
     </motion.div>
   );
