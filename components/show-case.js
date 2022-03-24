@@ -38,9 +38,7 @@ const ShowCase = () => {
   }
   return (
     <>
-      {/*<div className="top" />*/}
-      {/*<Navbar />*/}
-      <div className="main-container App page">
+      <div className="main-container App">
         <div className="scroll-container" data-scroll-container ref={ref}>
           <div className="content">
             <div className="gallery">
@@ -58,8 +56,6 @@ const ShowCase = () => {
               </div>
               <div />
             </div>
-
-            {/*<Footer />*/}
           </div>
         </div>
       </div>
