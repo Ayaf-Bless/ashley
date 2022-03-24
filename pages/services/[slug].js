@@ -103,7 +103,7 @@ function ServiceDetail({ service }) {
                       initial={{ scale: 1.0 }}
                       animate={{
                         transition: { delay: 0.2, ...transition },
-                        y: -600,
+                        y: -200,
                       }}
                     >
                       <Image

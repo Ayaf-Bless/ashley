@@ -11,7 +11,6 @@
       font-size: 1.2rem;
       letter-spacing: 0.5rem;
       color: $black;
-      mix-blend-mode: difference;
       text-decoration: none;
       font-weight: 700;
     }
@@ -22,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    mix-blend-mode: difference;
     @include media("<=tablet") {
       margin-right: 24px;
     }

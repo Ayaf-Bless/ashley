@@ -40,7 +40,7 @@ const ShowCase = () => {
     <>
       {/*<div className="top" />*/}
       {/*<Navbar />*/}
-      <div className="main-container App">
+      <div className="main-container App page">
         <div className="scroll-container" data-scroll-container ref={ref}>
           <div className="content">
             <div className="gallery">
