@@ -122,7 +122,6 @@
   }
 }
 
-
 main {
   .container-show-case {
     position: relative;
@@ -173,9 +172,20 @@ main {
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          @include media("<=tablet") {
+            justify-content: center;
+          }
+
           .location {
             span:nth-child(2) {
               margin-left: 16px;
+            }
+            @include media("<=phone") {
+              display: none;
+            }
+            @include media("<=tablet") {
+              display: none;
             }
           }
           .mua {
@@ -188,6 +198,27 @@ main {
             margin-right: 72px;
             text-align: center;
             font-size: 16px;
+            display: flex;
+            justify-content: center;
+            @include media("<=phone") {
+              margin-right: 0;
+            }
+            @include media("<=tablet") {
+              margin-right: 0;
+            }
+
+            & > span {
+              @include media("<=tablet") {
+                font-size: 7rem;
+                text-align: center;
+                display: inline-block;
+              }
+              @include media("<=phone") {
+                font-size: 5rem;
+                text-align: center;
+                display: inline-block;
+              }
+            }
           }
           span {
             display: inline-block;
