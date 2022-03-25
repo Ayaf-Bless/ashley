@@ -5,8 +5,7 @@ import { imageData } from "../utils/show-case-data";
 import LocomotiveScroll from "locomotive-scroll";
 
 import GalleryItem from "./gallery-item";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import ContactComponent from "./contact";
 const ShowCase = () => {
   const ref = useRef(null);
 
@@ -37,8 +36,8 @@ const ShowCase = () => {
     return null;
   }
   return (
-    <>
-      <div className="main-container App">
+    <div className="App page">
+      <div className="main-container">
         <div className="scroll-container" data-scroll-container ref={ref}>
           <div className="content">
             <div className="gallery">
@@ -56,10 +55,11 @@ const ShowCase = () => {
               </div>
               <div />
             </div>
+            {/* <ContactComponent /> */}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default ShowCase;
