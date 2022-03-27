@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 import Navigation from "../components/navigation";
 import "../node_modules/locomotive-scroll/src/locomotive-scroll.scss";
+import Head from "next/head";
 
 function debounce(fn, ms) {
   let timer;
@@ -38,6 +39,9 @@ function MyApp({ Component, pageProps }) {
   });
   return (
     <div>
+      <Head>
+        <meta description="Pour le besoin de beaute en kinshasa" />
+      </Head>
       <Header dimensions={dimensions} />
       <Navigation />
       <Component {...pageProps} />

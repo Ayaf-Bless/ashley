@@ -3,7 +3,7 @@ import Banner from "../components/banner";
 import { useEffect, useState } from "react";
 import Cases from "../components/cases";
 import IntroOverlay from "../components/introOverlay";
-
+import Head from "next/head"
 const tl = gsap.timeline();
 const homeAnimation = (completeAnimation) => {
   tl.from(".line span", 1.8, {
@@ -42,6 +42,9 @@ export default function Home() {
   }, []);
   return (
     <div className={"App"}>
+      <Head>
+        <title>Ashley salon</title>
+      </Head>
       {!animationComplete ? <IntroOverlay /> : null}
       <Banner />
       <Cases />

@@ -3,6 +3,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { serviceItem } from "../../utils/itemData";
 import Image from "next/image";
 import ScrollForMore from "../../components/scroolForMore";
+import Head from "next/head";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const name = {
@@ -42,6 +43,9 @@ function ServiceDetail({ service }) {
   }, [canScroll]);
   return (
     <div className={"App container page"}>
+      <Head>
+        <title>Ashley salon: {service.subtitle}</title>
+      </Head>
       <motion.main
         onAnimationComplete={() => setCanScroll(true)}
         className={"single"}
