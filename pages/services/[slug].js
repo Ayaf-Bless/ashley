@@ -62,10 +62,9 @@ function ServiceDetail({ service }) {
                 className={"details-show-case"}
               >
                 <div className="location">
-                  <span>28.538336</span>
-                  <span>-81.379234</span>
+                  <span>{service.price}</span>
                 </div>
-                <div className="mua">Instagram: @ashley-salon</div>
+                <div className="mua">Facebook: @ashley-salon</div>
               </motion.div>
               <motion.div className="model">
                 <motion.span className="first" variants={name}>

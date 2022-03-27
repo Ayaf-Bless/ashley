@@ -26,7 +26,7 @@ const ContactComponent = () => {
     <div className={"container"}>
       <div className={"row"}>
         <div className="contact">
-          <div className="contact__info">abc@gmail.com</div>
+          <div className="contact__info">ashleysalonvip@gmail.com</div>
           <form
             className="contact__form"
             autoComplete="off"

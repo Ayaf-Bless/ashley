@@ -1,6 +1,4 @@
 import React from "react";
-import { RightArrow as CasesNext } from "../utils/svg-component";
-import { ArrowLeft as CasesPrev } from "../utils/svg-component";
 import Image from "next/image";
 import Link from "next/link";
 import { serviceItem } from "../utils/itemData";

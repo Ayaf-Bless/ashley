@@ -1,18 +1,19 @@
 .main-container {
   padding-right: 500px;
   box-sizing: border-box;
+  // font-size: 16rem;
   @include media("<=phone") {
     height: 100vh;
   }
 }
 
-.c-fixed_target {
-  position: absolute;
-  top: -100vh;
-  right: 0;
-  left: 0;
-  bottom: -100vh;
-}
+// .c-fixed_target {
+//   position: absolute;
+//   top: -100vh;
+//   right: 0;
+//   left: 0;
+//   bottom: -100vh;
+// }
 .scroll-container {
   margin-right: 500px;
 }
@@ -24,9 +25,9 @@
   position: relative;
   align-items: center;
 
-  @include media("<=phone") {
-    width: 100%;
-  }
+  // @include media("<=phone") {
+  //   width: 100%;
+  // }
 }
 
 .gallery {
@@ -41,6 +42,7 @@
   background-color: white;
   @include media("<=phone") {
     width: 500vw;
+    position: absolute;
   }
 }
 .gallery-helper {
