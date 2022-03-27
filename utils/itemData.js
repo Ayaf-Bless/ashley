@@ -5,8 +5,8 @@ export const serviceItem = [
     title: "Ayez vos besoins de coiffure satisfait",
     image: "hair",
     slug: "coiffure-maquillage",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                in section 1.10.32.`,
+    description:
+      "Le salon de coiffure Ashley vit derrière sa bonne réputation de satisfaire chaque client qui rentre dans nos portes, vos besoins de coiffure ont maintenant une solution, nous tenons à vous donner la coupe qu’il faut et comme vous le voulez (tissage, mèche, teinture, etc…), et avec un prix d’ami ",
     price: "$10 ~ $20",
   },
   {
@@ -15,19 +15,8 @@ export const serviceItem = [
     title: "La location de robe de mariage et le maquillage",
     image: "wedding",
     slug: "marriage",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                written in 45 BC. This book is a treatise on the theory of
-                ethics, very popular during the Renaissance. The first line of
-                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
-                in section 1.10.32.`,
+    description:
+      "Nous savons que c’est un jour inoubliable pour vous et c’est notre joie de vous accompagner sur cette journée remplie de bonheur pour vous, passez et choisissez une belle robe pour cette journée sûre de prix abordable et bon mariage d’avance ",
     price: "$100 ~ $300",
   },
   {
@@ -36,19 +25,8 @@ export const serviceItem = [
     title: "Pour vos soins de main et son embellissement",
     image: "nails",
     slug: "manicure",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                written in 45 BC. This book is a treatise on the theory of
-                ethics, very popular during the Renaissance. The first line of
-                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
-                in section 1.10.32.`,
+    description:
+      "Faites-en sort que vos mains brillent avec Ashley salon, ou vous aurez de professionnel sur le sujet et tout ça avec un prix battant toutes concurrencent de $5 ~ $10, Venez et recevez un traitement comme nulle part et on ferait de vous un client satisfait ",
     price: "$2 ~ $5",
   },
 ];
