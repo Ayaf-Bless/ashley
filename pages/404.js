@@ -1,17 +1,13 @@
 import React from "react";
-import Link from "next/link";
-import { RightArrow } from "../utils/svg-component";
 
-function About() {
+function NotFound() {
   return (
     <div className={"page App"}>
       <div className={"container"}>
-        <div className={"row"}>
-          Oupss...la page que vous cherchez n'existe pas 😏
-        </div>
+        <div className={"row"}>Oupss... on a du mal à trouver votre page</div>
       </div>
     </div>
   );
 }
 
-export default About;
+export default NotFound;

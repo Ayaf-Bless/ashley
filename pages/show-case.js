@@ -21,7 +21,6 @@ const Index = () => {
       <Head>
         <title>Ashley salon: show-case</title>
       </Head>
-      <HomeLazy />
     </>
   );
 };
