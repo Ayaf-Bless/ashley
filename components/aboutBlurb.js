@@ -27,16 +27,10 @@ const AboutBlurb = () => {
           </div>
           <div className="images">
             <div className="top-right">
-              <Image
-                src={require(`../public/assets/ullistration/nails.jpg`)}
-                alt=""
-              />
+              <Image src={require(`../public/images/2.jpg`)} alt="" />
             </div>
             <div className="bottom-left">
-              <Image
-                src={require(`../public/assets/ullistration/nails.jpg`)}
-                alt=""
-              />
+              <Image src={require(`../public/images/1.jpg`)} alt="" />
             </div>
           </div>
         </div>

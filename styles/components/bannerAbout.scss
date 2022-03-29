@@ -90,5 +90,13 @@
     text-transform: uppercase;
     position: absolute;
     bottom: 48px;
+    left: 180px;
+
+    @include media("<=tablet") {
+      left: 50px;
+    }
+    @include media("<=phone") {
+      left: 30px;
+    }
   }
 }

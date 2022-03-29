@@ -66,7 +66,9 @@
       height: 1000px;
       position: relative;
       z-index: 7;
-
+      @include media("<=phone") {
+        display: none;
+      }
       .top-right {
         position: absolute;
         width: 460px;
@@ -105,7 +107,7 @@
       height: 340px;
     }
     @include media("<=phone") {
-      width: 100vw;
+      display: none;
     }
     &.overlay {
       z-index: 7;
