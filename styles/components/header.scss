@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $black;
     mix-blend-mode: difference;
     @include media("<=tablet") {
       margin-right: 24px;
@@ -36,6 +37,7 @@
         text-align: center;
         margin-bottom: 0.3rem;
         background: $black;
+        mix-blend-mode: difference;
         height: 2px;
         width: 100%;
         display: block;

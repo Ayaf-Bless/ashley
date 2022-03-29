@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import BannerAbout from "../components/bannerAbout";
 
 const Index = () => {
   return (
@@ -7,6 +8,7 @@ const Index = () => {
       <Head>
         <title>Ashley salon: show-case</title>
       </Head>
+      <BannerAbout />
     </>
   );
 };

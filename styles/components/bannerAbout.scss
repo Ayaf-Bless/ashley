@@ -1,0 +1,94 @@
+.container-about {
+  min-width: 1560px;
+  width: 1560px;
+  margin: 5rem auto 0 auto;
+  @media (max-width: 1440px) {
+    width: 1280px;
+    min-width: 1280px;
+  }
+  @media (max-width: 1280px) {
+    width: 976px;
+    min-width: 976px;
+  }
+  @media (max-width: 976px) {
+    width: 768px;
+    min-width: 768px;
+  }
+}
+
+//Banner
+.banner-about {
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  position: relative;
+  height: 100vh;
+  .row-about {
+    position: relative;
+    .mainText {
+      font-size: 6rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: $white;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      mix-blend-mode: difference;
+      z-index: 8;
+      @include media("<=tablet") {
+        font-size: 4rem;
+      }
+      @include media("<=phone") {
+        font-size: 3rem;
+      }
+    }
+    .mainImage {
+      width: 435px;
+      margin: 0 auto;
+      @include media("<=tablet") {
+        width: 300px;
+      }
+      @include media("<=phone") {
+        width: 200px;
+      }
+    }
+    .sideImage {
+      width: 260px;
+      position: absolute;
+
+      @include media("<=tablet") {
+        width: 100px;
+      }
+      @include media("<=tablet") {
+        width: 98px;
+      }
+    }
+    .right {
+      right: 168px;
+      bottom: 0;
+      @media (max-width: 1440px) {
+        right: 128px;
+      }
+    }
+    .left {
+      left: 168px;
+      top: 0;
+      @media (max-width: 1440px) {
+        left: 128px;
+      }
+    }
+  }
+  .scroll {
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+    color: $black;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 48px;
+  }
+}
