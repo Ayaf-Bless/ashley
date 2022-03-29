@@ -10,7 +10,7 @@ const Navigation = () => {
             <div className="nav-label">Menu</div>
             <ul className="nav-links">
               <li>
-                <Link href={"/show-case"}>Show case</Link>
+                <Link href={"/about"}>Show case</Link>
               </li>
               <li>
                 <Link href={"/contact"}>Nous contacter</Link>
