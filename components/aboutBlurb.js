@@ -8,7 +8,7 @@ const AboutBlurb = () => {
       <div className="container-about">
         <div className="inner-blurb">
           <div className="content">
-            <h3>The ability to create</h3>
+            <h3>À-propos de nous</h3>
             <p>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
