@@ -1,0 +1,116 @@
+.about-blurb {
+  padding: 48px 0;
+  background: $white;
+  position: relative;
+
+  @include media("<=phone") {
+    width: 100%;
+  }
+
+  .inner-blurb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media("<=tablet") {
+      flex-direction: column;
+      padding: 0;
+    }
+    .content {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      @include media("<=tablet") {
+        width: 100%;
+      }
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+        margin: 0;
+        @include media("<=tablet") {
+          width: 100vw;
+          text-align: center;
+        }
+        @include media("<=phone") {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 300;
+        margin: 40px 0 72px;
+        @include media("<=tablet") {
+          width: 90vw;
+        }
+        @include media("<=phone") {
+          width: 90%;
+        }
+      }
+      .btn-row {
+        a {
+          font-weight: 700;
+          font-size: 0.875rem;
+          letter-spacing: 1.5px;
+          color: $black;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
+    .images {
+      width: 50%;
+      height: 1000px;
+      position: relative;
+      z-index: 7;
+
+      .top-right {
+        position: absolute;
+        width: 460px;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        @include media("<=tablet") {
+          width: 200px;
+          top: -15rem;
+          right: -10rem;
+        }
+      }
+      .bottom-left {
+        position: absolute;
+        width: 410px;
+        left: 0;
+        bottom: 0;
+        @include media("<=tablet") {
+          width: 200px;
+          top: 5rem;
+          left: -9rem;
+        }
+      }
+    }
+  }
+  .black-box {
+    background: $black;
+    height: 418px;
+    width: 836px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @include media("<=tablet") {
+      width: 100%;
+      height: 340px;
+    }
+    @include media("<=phone") {
+      width: 100vw;
+    }
+    &.overlay {
+      z-index: 7;
+      background: $yellow;
+      mix-blend-mode: overlay;
+    }
+  }
+}
