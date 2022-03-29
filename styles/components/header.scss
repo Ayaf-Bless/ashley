@@ -23,6 +23,7 @@
     align-items: center;
     color: $black;
     mix-blend-mode: difference;
+    z-index: 4;
     @include media("<=tablet") {
       margin-right: 24px;
     }
